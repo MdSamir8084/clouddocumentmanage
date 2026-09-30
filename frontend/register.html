@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Cloud Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+<div class="auth-card">
+ <a class="brand" href="index.html">Cloud<span>Portal</span></a>
+  <p class="eyebrow">JOIN THE PORTAL</p>
+  <h1>Create Account</h1>
+  <form id="registerForm" class="form">
+    <input name="name" placeholder="Full name" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="phone" placeholder="Phone">
+    <input name="password" type="password" placeholder="Password (8+ characters)" required>
+    <button class="btn">Register</button>
+    <p id="registerMsg" class="message"></p>
+  </form>
+  <p class="muted">Already registered? <a href="login.html">Login</a>
+<script src="js/auth.js"></script>
+</body>
+</html>

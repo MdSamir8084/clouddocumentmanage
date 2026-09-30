@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Cloud Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="admin-nav">
+  <div>
+    <p class="eyebrow">ADMIN CONSOLE</p>
+    <h2>CloudPortal</h2>
+  </div>
+  <button id="logoutBtn" class="btn small danger">Logout</button>
+</header>
+
+<main class="dashboard">
+  <div class="page-heading">
+    <div>
+      <p class="eyebrow">CONTROL CENTER</p>
+      <h1>Admin Dashboard</h1>
+      <p class="muted">Manage users, messages and document records.</p>
+    </div>
+  </div>
+
+  <section class="stats">
+    <article class="stat-card"><span>Total Students</span><strong id="usersCount">0</strong></article>
+    <article class="stat-card"><span>Messages</span><strong id="messagesCount">0</strong></article>
+    <article class="stat-card"><span>Documents</span><strong id="documentsCount">0</strong></article>
+  </section>
+
+  <section class="card">
+    <div class="section-head"><h2>👥 Users</h2></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Role</th><th>Created</th></tr></thead>
+        <tbody id="usersTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="section-head"><h2>📩 Contact Messages</h2></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Name</th><th>Email</th><th>Message</th><th>Date</th></tr></thead>
+        <tbody id="messagesTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="section-head"><h2>📁 Uploaded Documents</h2></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>User</th><th>Email</th><th>File</th><th>Type</th><th>Date</th><th>Open</th></tr></thead>
+        <tbody id="documentsTable"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | Cloud Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/">Cloud<span>Portal</span></a>
+  <div class="nav-user">
+    <span id="welcome"></span>
+    <button id="logoutBtn" class="btn small danger">Logout</button>
+  </div>
+</header>
+
+<main class="dashboard">
+  <div class="page-heading">
+    <div>
+      <p class="eyebrow">STUDENT AREA</p>
+      <h1>My Dashboard</h1>
+    </div>
+  </div>
+
+  <section class="grid-2">
+    <article class="card">
+      <h2>My Profile</h2>
+      <form id="profileForm" class="form">
+        <input id="name" name="name" placeholder="Name" required>
+        <input id="email" name="email" placeholder="Email" disabled>
+        <input id="phone" name="phone" placeholder="Phone">
+        <button class="btn">Update Profile</button>
+        <p id="profileMsg" class="message"></p>
+      </form>
+    </article>
+
+    <article class="card">
+      <h2>Upload Document</h2>
+      <p class="muted">Allowed: PDF, JPG, PNG, WEBP. Max 5 MB.</p>
+      <form id="uploadForm" class="form" enctype="multipart/form-data">
+        <input name="document" type="file" accept=".pdf,.jpg,.jpeg,.png,.webp" required>
+        <button class="btn">Upload</button>
+        <p id="uploadMsg" class="message"></p>
+      </form>
+    </article>
+  </section>
+
+  <section class="card">
+    <h2>My Documents</h2>
+    <div id="documents" class="list"></div>
+  </section>
+</main>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
