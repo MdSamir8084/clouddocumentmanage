@@ -1,0 +1,13 @@
+architecture/
+documentation/
+screenshots/
+
+.git/
+.github/
+
+README.md
+
+.env
+.env.*
+
+node_modules/
